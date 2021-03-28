@@ -1,0 +1,26 @@
+micronaut:
+  application:
+    name: product
+grpc:
+  server:
+    port: 50053
+
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5434/product
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 'P@ssw0rd'
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+        show_sql: false
+
+flyway:
+  datasources:
+    default:
+      enabled: true

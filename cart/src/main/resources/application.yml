@@ -1,0 +1,28 @@
+micronaut:
+  application:
+    name: cart
+
+grpc:
+  channels:
+    customer:
+      target: localhost:50052
+      plaintext: true
+    product:
+      target: localhost:50053
+      plaintext: true
+  server:
+    port: 50051
+
+rabbitmq:
+  username: rabbituser
+  password: P@ssw0rd
+
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5433/cart
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 'P@ssw0rd'
+
+jpa.default.properties.hibernate.hbm2ddl.auto: create
+

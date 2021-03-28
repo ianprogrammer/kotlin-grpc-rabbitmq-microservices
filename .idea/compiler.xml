@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="micronaut.processing.annotations" value="com.ian.*" />
+        <option name="micronaut.processing.group" value="com.ian" />
+        <option name="micronaut.processing.incremental" value="true" />
+        <option name="micronaut.processing.module" value="payment" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-inject-java/2.4.1/ee40fb70ed9eabd8559f6e6bb11a28e63182ce77/micronaut-inject-java-2.4.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-validation/2.4.1/2beb188fa2213f938c4f053cc7abe14d529c3a44/micronaut-validation-2.4.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-aop/2.4.1/f0a44a6639d0b17d75be9dea58e5d8a8c45f6b8a/micronaut-aop-2.4.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-inject/2.4.1/25ee1a831e6a25ae194eef0bb989f6610d5b5fc9/micronaut-inject-2.4.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-core-reactive/2.4.1/a3d29318bf12c0b414c6182e3670efde7cdc9494/micronaut-core-reactive-2.4.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-core/2.4.1/a21f53544adce6bb99003cb3b3b15e6b3e575e8e/micronaut-core-2.4.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs-annotations/4.0.3/755cc5d84d32b31beeaf8597181f0fc4eac98e16/spotbugs-annotations-4.0.3.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.26/a78a8747147d2c5807683e76ec2b633e95c14fe9/snakeyaml-1.26.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.3/d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0/reactive-streams-1.0.3.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
+        </processorPath>
+        <module name="payment.test" />
+        <module name="payment.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="email.main" target="13" />
+      <module name="email.test" target="13" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

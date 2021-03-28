@@ -1,0 +1,62 @@
+version: "3"
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq-volume:/var/lib/rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: rabbituser
+      RABBITMQ_DEFAULT_PASS: P@ssw0rd
+
+  customer-db:
+    image: postgres:13.2-alpine
+    healthcheck:
+      test: psql postgres --command "select 1" -U postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - customer-volume:/var/lib/postgresql/customerdatabase/data
+    environment:
+      POSTGRES_DB: customer
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: P@ssw0rd
+
+
+  cart-db:
+    image: postgres:13.2-alpine
+    healthcheck:
+      test: psql postgres --command "select 1" -U postgres
+    ports:
+      - "5433:5433"
+    volumes:
+      - cart-volume:/var/lib/postgresql/cartdatabase/data
+    command: -p 5433
+    environment:
+      POSTGRES_DB: cart
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: P@ssw0rd
+
+  products-db:
+    image: postgres:13.2-alpine
+    healthcheck:
+      test: psql postgres --command "select 1" -U postgres
+    ports:
+      - "5434:5434"
+    volumes:
+      - products-volume:/var/lib/postgresql/productdatabase/data
+    command: -p 5434
+    environment:
+      POSTGRES_DB: product
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: P@ssw0rd
+
+volumes:
+  rabbitmq-volume:
+  customer-volume:
+  cart-volume:
+  products-volume:

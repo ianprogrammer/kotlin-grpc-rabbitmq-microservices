@@ -1,0 +1,9 @@
+micronaut:
+  application:
+    name: payment
+grpc:
+  server:
+    port: 50054
+rabbitmq:
+  username: rabbituser
+  password: P@ssw0rd
